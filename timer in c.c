@@ -1,15 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 int num(){
     int number;
     printf("START THE TIMER BY ENTERING 0 :");
     scanf("%d", &number);
-    return number;}
-    
+    return number;}  
 int main(){
     int s=0,ms=0,minute=0,n, g;
-    
     do {
     n=num();
     printf("\e[1;1H\e[2J");
@@ -27,12 +24,9 @@ int main(){
         printf("%d:", minute);
          printf("%d:",s);
           printf("%d",ms);
-        
         }}
     else {
         printf("wrong input");
-        n=num();
-    }}
+        n=num(); }}
      while(n!=0);
-    return 0;
-}
+    return 0;}
